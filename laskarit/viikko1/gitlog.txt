@@ -1,0 +1,113 @@
+commit 5fb72e55c662dc24fdcb96cbe605190e802a082f
+Author: Tomi Ihalainen <tomi.ihalainen@helsinki.fi>
+Date:   Tue Mar 21 18:42:41 2023 +0200
+
+    tiedostoja muutokset
+
+ tiedostoja/file1 | 1 -
+ tiedostoja/file2 | 1 -
+ 2 files changed, 2 deletions(-)
+
+commit e9748595506fde9a578388e43b2affa28ff42d3d
+Author: Tomi Ihalainen <tomi.ihalainen@helsinki.fi>
+Date:   Tue Mar 21 18:40:39 2023 +0200
+
+    tiedostoja
+
+ tiedostoja/file1 | 1 +
+ tiedostoja/file2 | 1 +
+ tiedostoja/file3 | 1 +
+ 3 files changed, 3 insertions(+)
+
+commit 4dcb0b409fb27c774d905dd22a9682e891001abc
+Author: Tomi Ihalainen <tomi.ihalainen@helsinki.fi>
+Date:   Tue Mar 21 18:35:57 2023 +0200
+
+    muutksi 1 ja 3
+
+ eka.txt    | 2 +-
+ kolmas.txt | 1 +
+ 2 files changed, 2 insertions(+), 1 deletion(-)
+
+commit d9b8e92282e7385fc60d7150c041895ebbb826bf
+Author: Tomi Ihalainen <tomi.ihalainen@helsinki.fi>
+Date:   Tue Mar 21 18:34:32 2023 +0200
+
+    tiedosto -> eka
+
+ tiedosto.txt => eka.txt | 0
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+
+commit ad8bdd8eb811c7155051ea193415e36b92af9b6d
+Author: Tomi Ihalainen <tomi.ihalainen@helsinki.fi>
+Date:   Tue Mar 21 18:32:56 2023 +0200
+
+    toinen pois
+
+ toinen.txt | 2 --
+ 1 file changed, 2 deletions(-)
+
+commit dda0ad24dcc45daa3ed0df699186ce140d6b4b2b
+Author: Tomi Ihalainen <tomi.ihalainen@helsinki.fi>
+Date:   Tue Mar 21 18:32:03 2023 +0200
+
+    vähä pekonia pois tiedostosta
+
+ tiedosto.txt | 4 +---
+ 1 file changed, 1 insertion(+), 3 deletions(-)
+
+commit d8a9bcfab5f96963f990c8172e85218f61476e6a
+Author: Tomi Ihalainen <tomi.ihalainen@helsinki.fi>
+Date:   Tue Mar 21 18:30:45 2023 +0200
+
+    pekonia tiedostoon
+
+ tiedosto.txt | 9 +++++++++
+ 1 file changed, 9 insertions(+)
+
+commit b2b40b3b34bdd83a1c7a13aa1ddd7673833a0c3c
+Author: Tomi Ihalainen <tomi.ihalainen@helsinki.fi>
+Date:   Tue Mar 21 18:27:06 2023 +0200
+
+    lisätty stuff/stuff.txt
+
+ stuff/stuff.txt | 1 +
+ 1 file changed, 1 insertion(+)
+
+commit 8b083e2a7b1e0d0fd29d651ecebaec39953d6868
+Author: Tomi Ihalainen <tomi.ihalainen@helsinki.fi>
+Date:   Tue Mar 21 18:25:14 2023 +0200
+
+    muokattu
+
+ kolmas.txt | 1 +
+ toinen.txt | 1 +
+ 2 files changed, 2 insertions(+)
+
+commit ea3e3d4d20e30d50e43650edb253689b8648073b
+Author: Tomi Ihalainen <tomi.ihalainen@helsinki.fi>
+Date:   Tue Mar 21 18:23:54 2023 +0200
+
+    kolmas luotu
+
+ kolmas.txt | 1 +
+ 1 file changed, 1 insertion(+)
+
+commit 2cf4f732605636e30592994158c27632612ecef2
+Author: Tomi Ihalainen <tomi.ihalainen@helsinki.fi>
+Date:   Tue Mar 21 18:22:18 2023 +0200
+
+    muutos ja lisäys
+
+ tiedosto.txt | 1 +
+ toinen.txt   | 1 +
+ 2 files changed, 2 insertions(+)
+
+commit 3815354872b739e9bf23f3f5360d63d9bcb05ce5
+Author: Tomi Ihalainen <tomi.ihalainen@helsinki.fi>
+Date:   Tue Mar 21 18:20:34 2023 +0200
+
+    tiedosto.txt luotu
+
+ tiedosto.txt | 0
+ 1 file changed, 0 insertions(+), 0 deletions(-)
