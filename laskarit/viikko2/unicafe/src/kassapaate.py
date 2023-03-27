@@ -4,41 +4,52 @@ class Kassapaate:
         self.edulliset = 0
         self.maukkaat = 0
 
-    def syo_edullisesti_kateisella(self, maksu):
-        if maksu >= 240:
-            self.kassassa_rahaa = self.kassassa_rahaa + 240
+    def __kateismaksu(self, maksu, onEdullinen):
+        hinta = self.__hae_hinta(onEdullinen)
+
+        if maksu >= hinta:
+            self.kassassa_rahaa = self.kassassa_rahaa + hinta
+            self.__lisaa_lounas(onEdullinen)
+            return maksu - hinta
+        
+        return maksu
+
+    def __korttimaksu(self, kortti, onEdullinen):
+        hinta = self.__hae_hinta(onEdullinen)
+
+        if kortti.saldo >= hinta:
+            kortti.ota_rahaa(hinta)
+            self.__lisaa_lounas(onEdullinen)
+            return True
+        
+        return False
+
+    def __hae_hinta(self, onEdullinen):
+        if onEdullinen:
+            return 240
+
+        return 400
+
+    def __lisaa_lounas(self, onEdullinen):
+        if onEdullinen:
             self.edulliset += 1
-            return maksu - 240
         else:
-            return maksu
+            self.maukkaat += 1
+
+    def syo_edullisesti_kateisella(self, maksu):
+        return self.__kateismaksu(maksu, True)
 
     def syo_maukkaasti_kateisella(self, maksu):
-        if maksu >= 400:
-            self.kassassa_rahaa = self.kassassa_rahaa + 400
-            self.maukkaat += 1
-            return maksu - 400
-        else:
-            return maksu
+        return self.__kateismaksu(maksu, False)
+
 
     def syo_edullisesti_kortilla(self, kortti):
-        if kortti.saldo >= 240:
-            kortti.ota_rahaa(240)
-            self.edulliset += 1
-            return True
-        else:
-            return False
+        return self.__korttimaksu(kortti, True)
 
     def syo_maukkaasti_kortilla(self, kortti):
-        if kortti.saldo >= 400:
-            kortti.ota_rahaa(400)
-            self.maukkaat += 1
-            return True
-        else:
-            return False
+        return self.__korttimaksu(kortti, False)
 
     def lataa_rahaa_kortille(self, kortti, summa):
         if summa >= 0:
             kortti.lataa_rahaa(summa)
             self.kassassa_rahaa += summa
-        else:
-            return
