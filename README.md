@@ -1,4 +1,6 @@
-# Otsikko
+# Tomin Ohjelmointitekniikan kurssi 2023
+
+Varsinainen harjoitustyö löytyy täältä: [OpenGDSN](./open_gdsn/README.md)
 
 **Bacon** *ipsum* dolor amet filet mignon short loin sirloin andouille pancetta bacon prosciutto brisket shoulder biltong beef.
 
