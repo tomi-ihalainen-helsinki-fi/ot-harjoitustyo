@@ -2,6 +2,7 @@ import unittest
 from repositories.company_repository import company_repository
 from entities.company import Company
 
+
 class TestCompanyRepository(unittest.TestCase):
     def setUp(self):
         self._companyDS = Company("Source Oy", "1234567890123", True, False)
@@ -22,4 +23,3 @@ class TestCompanyRepository(unittest.TestCase):
 
         company_repository.delete_all()
         self.assertEqual(len(company_repository.get_all()), 0)
-        

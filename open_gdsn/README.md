@@ -32,3 +32,15 @@ Run tests and generate HTML report in _htmlcov_ directory:
 ```bash
 poetry run invoke coverage-report
 ```
+
+### Lint
+
+```bash
+poetry run invoke lint
+```
+
+### Format code
+
+```bash
+poetry run invoke format
+```
